@@ -1,11 +1,21 @@
 // MyConsoleApp.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//This project calculates how many customers purchased one or more energy drinks, and how many prefer citrus-flavored energy drinks.
 
 #include <iostream>
-//test message
+using namespace std;
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    int customersTotal = 16500, customersPurchase, customersCitrus;
+    float purchasePercentage = 0.15, citrusPercentage = 0.58;
+
+    customersPurchase = customersTotal * purchasePercentage;
+    customersCitrus = customersPurchase * citrusPercentage;
+
+    cout << "Approximately " << customersPurchase << " customers in the survey purchase one or more energy drinks per week.\n";
+    cout << "Approximately " << customersCitrus << " cutomers in the survey prefer citrus-flavored energy drinks.\n";
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
