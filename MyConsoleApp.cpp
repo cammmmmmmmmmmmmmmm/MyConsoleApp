@@ -1,11 +1,24 @@
 // MyConsoleApp.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//This program calculates how much higher the ocean level will be at different years.
 
 #include <iostream>
-//test message
+using namespace std;
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    float oceanLevelRate = 1.5;
+    int time1 = 5, time2 = 7, time3 = 10;
+    float oceanLevel1, oceanLevel2, oceanLevel3;
+
+    oceanLevel1 = oceanLevelRate * time1;
+    oceanLevel2 = oceanLevelRate * time2;
+    oceanLevel3 = oceanLevelRate * time3;
+
+    cout << "The ocean level will be " << oceanLevel1 << " millimeters higher than the current ocean level in " << time1 << " years.\n";
+    cout << "The ocean level will be " << oceanLevel2 << " millimeters higher than the current ocean level in " << time2 << " years.\n";
+    cout << "The ocean level will be " << oceanLevel3 << " millimeters higher than the current ocean level in " << time3 << " years.\n";
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
