@@ -2,10 +2,21 @@
 //
 
 #include <iostream>
-//test message
+using namespace std;
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    int tank = 20;
+    float mpgTown = 23.5, mpgHighway = 28.9;
+    float distance1, distance2;
+
+    distance1 = tank * mpgTown;
+    distance2 = tank * mpgHighway;
+
+    cout << "The car can travel " << distance1 << " miles in town with one full tank of gas.\n";
+    cout << "The car can travel " << distance2 << " miles on the highway with one full tank of gas.\n";
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
