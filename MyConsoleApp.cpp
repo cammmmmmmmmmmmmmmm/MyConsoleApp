@@ -7,13 +7,13 @@ using namespace std;
 
 int main()
 {
-    int a = 309, b = 597, c;
-    c = a + b;
+    int a = 309, b = 597, c; //These are the random numbers the student will have to add.
+    c = a + b; //This stores the sum of the two numbers.
 
-    cout << "Take a moment to add these two numbers. Type any key to check the answer." << endl;
+    cout << "Take a moment to add these two numbers. Press the Enter key to check the answer." << endl;
 
     cout << setw(5) << a << endl;
-    cout << "+" << b << endl;
+    cout << left << '+' << right << setw(4) << b << endl;
     cout << setw(5) << "_____" << endl;
     
     cin.get();
