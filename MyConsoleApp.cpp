@@ -2,10 +2,28 @@
 //
 
 #include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
 
 int main()
 {
-    
+    double amount, principal, interestRate, timesCompounded, interestTotal;
+
+    cout << "This is a program that will calculate your balance in a savings account. Please answer the following questions:" << endl;
+
+    cout << "How much was the principal deposit?" << endl;
+    cin >> principal;
+    cout << "What is the interest rate? Please enter it as a decimal." << endl;
+    cin >> interestRate;
+    cout << "How many times per year is it compounded?" << endl;
+    cin >> timesCompounded;
+
+    amount = (principal * (1 + (pow((interestRate / timesCompounded), timesCompounded))));
+    interestTotal = amount - principal;
+
+    cout << amount << endl;
+    cout << interestTotal << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
