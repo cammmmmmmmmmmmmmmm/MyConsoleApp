@@ -2,10 +2,23 @@
 //
 
 #include <iostream>
-//test message
+#include <iomanip>
+using namespace std;
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    int a = 309, b = 597, c;
+    c = a + b;
+
+    cout << "Take a moment to add these two numbers. Type any key to check the answer." << endl;
+
+    cout << setw(5) << a << endl;
+    cout << "+" << b << endl;
+    cout << setw(5) << "_____" << endl;
+    
+    cin.get();
+
+    cout << setw(5) << c;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
