@@ -2,10 +2,29 @@
 //
 
 #include <iostream>
-//test message
+using namespace std;
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    //Original recipe: 1.5 cup sugar, 1 cups butter, & 2.75 cups flour make 48 cookies
+
+    double ratioSugar, ratioButter, ratioFlour;
+    int cookieAmount; //This is the desired amount of cookies
+
+    //These ratios will be used to calculate how many cups of sugar, butter, and flour will be needed to make the desired amount of cookies
+    ratioSugar = 1.5 / 48.0;
+    ratioButter = 1.0 / 48.0;
+    ratioFlour = 2.75 / 48.0;
+
+    cout << "How many cookies would you like to make?\n";
+    cin >> cookieAmount;
+    
+    ratioSugar *= cookieAmount; //The amount of sugar needed is now stored in ratioSugar
+    ratioButter *= cookieAmount; //The amount of butter needed is now stored in ratioSugar
+    ratioFlour *= cookieAmount; //The amount of flour needed is now stored in ratioFlour
+
+    cout << "To make " << static_cast<int>(cookieAmount) << " of cookies, you will need:\n";
+    cout << ratioSugar << " cups of sugar, " << ratioButter << " cups of butter, and " << ratioFlour << " cups of flour!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
