@@ -33,6 +33,6 @@ int main()
         days = 28; // If it is not a leap year, and the month is February, there are 28 days.
 
     cout << left << "There are " << days << " days in this month." << endl;
-
-
+    
+    return 0;
 }
